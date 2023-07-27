@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="TT.css">
+  <title>Test Thui</title>
+  <style>
+    body {
+      background: url("images/background6.jpg");
+    }
+    .form-box {
+      margin: 0 auto;
+      width: 250px;
+      margin-top: 200px;
+    }
+    .inputbox {
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 16px;
+      color: #3300ff;
+      background-color: transparent;
+      /* Fix password field */
+      white-space: nowrap;
+    }
+    .inputbox::placeholder {
+      color: #cccccc17;
+    }
+
+    /* Change all black text to cyan */
+
+    * {
+      color: rgb(216, 110, 195);
+    }
+
+    /* Change cyan text to RGB(216, 110, 195) */
+
+    .form-box, .inputbox, .inputbox::placeholder, .forget a, .register a {
+      color: rgb(91, 231, 224);
+    }
+  </style>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forgot Password</a></label>
+
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
